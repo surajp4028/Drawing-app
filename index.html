@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- icon------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer>
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="menu-section icon">
+            <div class="shapes">
+                <ul class="shape">
+                    <li id="square" class="tool"><i class="fa-regular fa-square"></i></li>
+                    <li id="circle" class="tool"><i class="fa-regular fa-circle"></i></li>
+                    <li id="line" class="tool"><i class="fa-solid fa-lines-leaning"></i></li>
+                    
+                   
+                </ul>
+            </div>
+            <div class="brush-eraser icon">
+                <ul>
+                    <li id="text" class="tool"><i class="fa-solid fa-font"></i></li>
+                    <li class="active tool" id="brush"><i class="fa-solid fa-paintbrush"></i></li>
+                    <li id="eraser" class="tool"><i class="fa-solid fa-eraser"></i></li>
+                </ul>
+            </div>
+            <div class="color-pattern">
+                <ul>
+                <li ><input type="color" id="clr" value="#f00a79"></li>
+                <li id="fl"><input type="checkbox" id="check"><span> Fill Color</span></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="draw-section">
+            <div class="left-side">
+                <input type="range" min="1" max="20" step="1" value="1" id="range"><br>
+                <div class="show-brush-width">
+                <label for="" disabled>Brush/Eraser Size</label>
+                <span id="brush-size-show"></span>
+                </div>
+            </div>
+            <div class="left-side-2">
+
+            </div>
+            <div class="right-side">
+                <canvas></canvas>
+            </div>
+        </div>
+        <div class="image-save-section">
+            <button id="reset">Reset Canvas</button>
+            <button id="save">Save as Image</button>
+        </div>
+    </div>
+    
+</body>
+</html>
